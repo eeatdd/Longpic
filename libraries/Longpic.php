@@ -27,7 +27,7 @@ class Longpic {
 	function thumbnail($url){
 		$longthumb = '';
 		// ######## YFROG.com ########
-		// API DOCS AT http://www.tweetphoto.com/api-documentation.php
+		// API DOCS AT http://code.google.com/p/imageshackapi/wiki/YFROGthumbnails
 		// this is here because the longurl project turns this into an unthumbable url
 		$long_part = "http://yfrog.com/";
 		$thumb_part = "http://yfrog.com/";
