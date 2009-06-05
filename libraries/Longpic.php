@@ -59,6 +59,12 @@ class Longpic {
 		$long_part = "http://www.picktor.com/";
 		$thumb_part = "http://www.picktor.com/get_photo_twitter.html?pic=";
 		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."&mode=150&crop=1"; 
+	 
+		// #######  PIKTER.com ########
+		// no api docs available	
+		$long_part = "http://pikter.com/view.php?V=";
+		$thumb_part = "http://pktrs.com/photos/";
+		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."_tmb.jpg"; 
 		
 		if($longthumb>'') return $longthumb;
 		else return FALSE;
