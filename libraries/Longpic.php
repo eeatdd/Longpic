@@ -47,7 +47,7 @@ class Longpic {
 		$long_part = "http://twitpic.com/";
 		$thumb_part = "http://twitpic.com/show/mini/";
 		if(substr_count($url,$long_part)>0) $longthumb = str_replace($long_part,$thumb_part, $url);  
-
+	 
 		// #######  TWEETPHOTO.com ########
 		// API DOCS AT http://www.tweetphoto.com/api-documentation.php 
 		$long_part = "http://www.tweetphoto.com/";
@@ -66,12 +66,21 @@ class Longpic {
 		$thumb_part = "http://pktrs.com/photos/";
 		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."_tmb.jpg"; 
 	 
-		// #######  phodroid.com ########
+		// #######  PHODROID.com ########
 		// no api docs available	
 		$long_part = "http://phodroid.com";
 		$thumb_part = "http://s.phodroid.com";
 		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url).".jpg"; 
+	 
+		// #######  SCREENTWEET.com ########
+		// no api docs FOUND	
+		$long_part = "http://screentweet.com/";
+		$thumb_part = "http://screentweet.com/content/pipe/?igcid=";
+		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url).";relPath=null;fileName=tn_small.jpg"; 
 		
+		
+	 
+	 
 		if($longthumb>'') return $longthumb;
 		else return FALSE;
 	}
