@@ -18,7 +18,8 @@ class Test_longpic extends Controller {
 							'http://www.picktor.com/ODUz',
 							'http://pikchur.com/aUF',
 							'http://pikter.com/view.php?V=4576',
-							'http://phodroid.com/09/06/xf7m7t');
+							'http://phodroid.com/09/06/xf7m7t',
+							'http://screentweet.com/0Kqop76');
 							
 		$this->load->view('view_longpic', $data);     
 	}
