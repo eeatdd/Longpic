@@ -80,6 +80,14 @@ class Longpic {
 		
 		
 	 
+		// #######  PIX.im ########
+		// API stuff at pix.im/api
+		$long_part = "http://pix.im/";
+		$thumb_part = "http://pix.im/";
+		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."/small"; 
+		
+		
+	 
 	 
 		if($longthumb>'') return $longthumb;
 		else return FALSE;
