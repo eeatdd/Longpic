@@ -65,6 +65,12 @@ class Longpic {
 		$long_part = "http://pikter.com/view.php?V=";
 		$thumb_part = "http://pktrs.com/photos/";
 		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."_tmb.jpg"; 
+	 
+		// #######  phodroid.com ########
+		// no api docs available	
+		$long_part = "http://phodroid.com";
+		$thumb_part = "http://s.phodroid.com";
+		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url).".jpg"; 
 		
 		if($longthumb>'') return $longthumb;
 		else return FALSE;
