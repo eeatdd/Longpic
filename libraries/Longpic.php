@@ -73,10 +73,10 @@ class Longpic {
 		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url).".jpg"; 
 	 
 		// #######  SCREENTWEET.com ########
-		// no api docs FOUND	
+		// API DOcs at http://www.screentweet.com/api/	
 		$long_part = "http://screentweet.com/";
-		$thumb_part = "http://screentweet.com/content/pipe/?igcid=";
-		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url).";relPath=null;fileName=tn_small.jpg"; 
+		$thumb_part = "http://screentweet.com/st/";
+		if(substr_count($url,$long_part)>0)$longthumb = str_replace($long_part,$thumb_part, $url)."/tn_medium.jpg"; 
 		
 		
 	 
